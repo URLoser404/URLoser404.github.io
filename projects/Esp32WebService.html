@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Esp32 connect to web service | URLoser404</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="妄想成為電神的肥宅">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a5fc1f3a.css" as="style"><link rel="preload" href="/assets/js/app.eb5efb7c.js" as="script"><link rel="preload" href="/assets/js/3.694cfddd.js" as="script"><link rel="preload" href="/assets/js/1.09be5092.js" as="script"><link rel="preload" href="/assets/js/13.ce81b1ca.js" as="script"><link rel="prefetch" href="/assets/js/10.c9dbfe14.js"><link rel="prefetch" href="/assets/js/11.16ef0918.js"><link rel="prefetch" href="/assets/js/12.3f852a46.js"><link rel="prefetch" href="/assets/js/14.627c0e12.js"><link rel="prefetch" href="/assets/js/15.08684cb7.js"><link rel="prefetch" href="/assets/js/4.1453fac2.js"><link rel="prefetch" href="/assets/js/5.c9c62734.js"><link rel="prefetch" href="/assets/js/6.11203148.js"><link rel="prefetch" href="/assets/js/7.ac032156.js"><link rel="prefetch" href="/assets/js/8.fa8c9d73.js"><link rel="prefetch" href="/assets/js/9.8c5c5573.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a5fc1f3a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>URLoser404</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>妄想成為電神的肥宅</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>URLoser404</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/hero.jpg" alt="URLoser404" class="logo"> <span class="site-name">URLoser404</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/projects/" class="nav-link"><i class="undefined"></i>
+  projects
+</a></li><li class="dropdown-item"><!----> <a href="/categories/學習歷程們/" class="nav-link"><i class="undefined"></i>
+  學習歷程們
+</a></li><li class="dropdown-item"><!----> <a href="/categories/life/" class="nav-link"><i class="undefined"></i>
+  life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      About
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/URLoser404" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://b0925138932@gmail.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/hero.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    URLoser404
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>5</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>3</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/projects/" class="nav-link"><i class="undefined"></i>
+  projects
+</a></li><li class="dropdown-item"><!----> <a href="/categories/學習歷程們/" class="nav-link"><i class="undefined"></i>
+  學習歷程們
+</a></li><li class="dropdown-item"><!----> <a href="/categories/life/" class="nav-link"><i class="undefined"></i>
+  life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      About
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/URLoser404" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://b0925138932@gmail.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Esp32 connect to web service</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>URLoser404</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Esp32 connect to web service</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>URLoser404</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>7/1/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>projects</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="esp32webserivce"><a href="#esp32webserivce" class="header-anchor">#</a> Esp32WebSerivce</h1> <p>所有的網址
+沒意外的話是在外網永遠存在
+webservices 也可以使用
+下為<a href="https://esp32-webservice.herokuapp.com/api/esp32-webservice" target="_blank" rel="noopener noreferrer">網址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>開源程式碼<a href="https://github.com/Owen-l4/esp32-webservice" target="_blank" rel="noopener noreferrer">github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="webservice-building"><a href="#webservice-building" class="header-anchor">#</a> webservice building</h2> <p>這裡主要為建置webservice的環節
+以便之後到學校與esp32作為接口對接</p> <h3 id="使用heroku建置新伺服器"><a href="#使用heroku建置新伺服器" class="header-anchor">#</a> 使用heroku建置新伺服器</h3> <p>使用免費方案即可
+<img src="https://i.imgur.com/SDNwhcA.jpg" alt=""></p> <h3 id="api基礎架構"><a href="#api基礎架構" class="header-anchor">#</a> api基礎架構</h3> <p>接著使用flask建置api的基礎架構
+flask加heroku的組合我個人挺喜歡的
+此方法也可以拿來架設網站在外網
+如此網站為我接下來個人部落格的施工預定地
+https://test-pants-blog.herokuapp.com</p> <p>因為在初步建置環節
+所以現在只有實作GET method
+使用RESTful api作為整體架構
+以下為程式碼</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> flask 
+
+app<span class="token operator">=</span>flask<span class="token punctuation">.</span>Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">&quot;/api/esp32-webservice&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">GET</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;testing&quot;</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="heroku-必要設定"><a href="#heroku-必要設定" class="header-anchor">#</a> heroku 必要設定</h3> <p>接著加入heroku server的必要文件</p> <h4 id="requirements-txt"><a href="#requirements-txt" class="header-anchor">#</a> requirements.txt</h4> <blockquote><p>為伺服器所需安裝的檔案清單
+如未寫入此清單不可使用</p></blockquote> <p>如下</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Flask
+gunicorn
+</code></pre></div><h4 id="runtime-txt"><a href="#runtime-txt" class="header-anchor">#</a> runtime.txt</h4> <blockquote><p>為伺服器所需使用的語言架構</p></blockquote> <p>如下</p> <div class="language-bash extra-class"><pre class="language-bash"><code>python-3.8.5
+</code></pre></div><h4 id="procfile"><a href="#procfile" class="header-anchor">#</a> Procfile</h4> <blockquote><p>為heroku的參數檔
+用來決定此伺服器的用途</p></blockquote> <p>如下</p> <div class="language-bash extra-class"><pre class="language-bash"><code>web gunicorn 主程式名稱:app變數名稱
+</code></pre></div><h3 id="運行至heroku"><a href="#運行至heroku" class="header-anchor">#</a> 運行至heroku</h3> <p>接著在本地端使用git工具以及heroku CLI將架構上傳</p> <p>git工具以及heroku CLI我皆已安裝
+在這裡不再演示</p> <p>直接在git工具裡面使用git bash
+可以直接使用linux command很方便
+還可以直接用vim寫README.md之類的普通文檔
+雖然我都亂寫</p> <p>初次上傳使用下列指令</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> init
+<span class="token comment">#初始化git</span>
+heroku login
+<span class="token comment">#登入heroku</span>
+heroku git:remote -a esp32-webservice
+<span class="token comment">#初始化git路徑</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;upload&quot;</span>
+<span class="token function">git</span> push heroku master
+<span class="token comment">#上傳至heroku伺服器</span>
+</code></pre></div><p>如之後須更新使用下列指令</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;upload&quot;</span>
+<span class="token function">git</span> push heroku master
+<span class="token comment">#上傳至heroku伺服器</span>
+</code></pre></div><h3 id="api基礎架構最終結果"><a href="#api基礎架構最終結果" class="header-anchor">#</a> api基礎架構最終結果</h3> <p><img src="https://i.imgur.com/1LTWCzC.png" alt=""></p> <h3 id="雲端sql-server建置"><a href="#雲端sql-server建置" class="header-anchor">#</a> 雲端sql server建置</h3> <p>因我的主機無法當作資料庫的server
+所以在這裡使用heroku的addons
+叫做<code>postgresql</code>
+也是sql server的一種
+可以用一般的sql語法來進行CRUD
+但如果用免費版的只能夠儲存大約1000筆資料
+所以這次的資料庫正規化我並不想做到3級
+避免資料庫肥大</p> <p>首先在終端機裡輸入指令
+來加入heroku的postgresql addons
+並創建資料庫</p> <div class="language-bash extra-class"><pre class="language-bash"><code>heroku addons:create heroku-postgresql:app名稱
+</code></pre></div><p>之後在終端機裡輸入指令來查詢資料庫的連線字串</p> <div class="language-bash extra-class"><pre class="language-bash"><code>heroku config:get DATABASE_URL -a app名稱
+</code></pre></div><p>雲端伺服器無法使用圖形介面建置資料庫
+所以這裡使用T-SQL直接在資料庫裡CREATE_TABLE
+這裡我用google colab來當作資料庫的調適工具</p> <p>待續，我好懶</p> <h2 id="esp32-connect-to-webservice"><a href="#esp32-connect-to-webservice" class="header-anchor">#</a> esp32 connect to webservice</h2> <p>待開學後與webservice對接</p> <h2 id="phone-app"><a href="#phone-app" class="header-anchor">#</a> phone app</h2> <p>我懶了 交給下禮拜的我</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/projects/Esp32WebService.html#webservice-building" class="sidebar-link reco-side-webservice-building" data-v-70334359>webservice building</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#使用heroku建置新伺服器" class="sidebar-link reco-side-使用heroku建置新伺服器" data-v-70334359>使用heroku建置新伺服器</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#api基礎架構" class="sidebar-link reco-side-api基礎架構" data-v-70334359>api基礎架構</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#heroku-必要設定" class="sidebar-link reco-side-heroku-必要設定" data-v-70334359>heroku 必要設定</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#運行至heroku" class="sidebar-link reco-side-運行至heroku" data-v-70334359>運行至heroku</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#api基礎架構最終結果" class="sidebar-link reco-side-api基礎架構最終結果" data-v-70334359>api基礎架構最終結果</a></li><li class="level-3" data-v-70334359><a href="/projects/Esp32WebService.html#雲端sql-server建置" class="sidebar-link reco-side-雲端sql-server建置" data-v-70334359>雲端sql server建置</a></li><li class="level-2" data-v-70334359><a href="/projects/Esp32WebService.html#esp32-connect-to-webservice" class="sidebar-link reco-side-esp32-connect-to-webservice" data-v-70334359>esp32 connect to webservice</a></li><li class="level-2" data-v-70334359><a href="/projects/Esp32WebService.html#phone-app" class="sidebar-link reco-side-phone-app" data-v-70334359>phone app</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.eb5efb7c.js" defer></script><script src="/assets/js/3.694cfddd.js" defer></script><script src="/assets/js/1.09be5092.js" defer></script><script src="/assets/js/13.ce81b1ca.js" defer></script>
+  </body>
+</html>
